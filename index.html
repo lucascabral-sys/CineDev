@@ -1,14 +1,32 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CineDev</title>
-    <script src="main.js"></script>
-<script src="index.css"></script>
+    
+<link rel="stylesheet" href="index.css">
 <body>
 
-
 </head>
+<div class="container"></div>
+<h1>CineDev</h1>
+<h2>Catálogo Avançado De Mídias</h2>
+
+<div id="mensagemErro"></div>
+ <form id="midiaForm"></form>
+ <select id="selectTipo">
+ <option value="filme">filme</option>
+ <option value="serie">serie></option>
+</select>
+<input type="text" id="inputTitulo" placeholder="Titulo Midia" required>
+<input type="number" id="inputAno" placeholder="Ano de Lançamento" required>
+<input type="text" id="inputGenero" placeholder="Gẽneero (ex: Ação, Sci-Fi)" required>
+<input type="text" id="inputTrailer" placeholder="URL fo Trailer (https://...)" required>
+<input type="number" id="inputTemporadas" placeholder="Número de Temporadas" style="display: none;">
+
+
+<script src="main.js"></script>
+
 </body>
 </html>
