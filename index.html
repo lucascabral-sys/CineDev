@@ -14,7 +14,7 @@
 <h2>Catálogo Avançado De Mídias</h2>
 
 <div id="mensagemErro"></div>
- <form id="midiaForm"></form>
+ <form id="midiaForm">
  <select id="selectTipo">
  <option value="filme">filme</option>
  <option value="serie">serie></option>
@@ -24,9 +24,14 @@
 <input type="text" id="inputGenero" placeholder="Gẽneero (ex: Ação, Sci-Fi)" required>
 <input type="text" id="inputTrailer" placeholder="URL fo Trailer (https://...)" required>
 <input type="number" id="inputTemporadas" placeholder="Número de Temporadas" style="display: none;">
-
-
+<button type="submit" id="btnCadastrar">Cadastrar no Catálogo</button>
+</form>
 <script src="main.js"></script>
+<hr>
+
+    <h2>Filmes & Séries Cadastrados</h2>
+    <div id="containerCatalogo" class="grid-catalogo"></div>
+</div>
 
 </body>
 </html>
