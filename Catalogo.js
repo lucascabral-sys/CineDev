@@ -14,5 +14,9 @@ export default class Catalogo {
         container.innerHTML += midia.obterDadosHTML();
         });
     }
-    xport default class Catalogo
+    xport default class Catalogo {
+        static filtrarPorGenero(catalogoInstanciado, generoAlvo) {
+        return catalogoInstanciado.#listaDeMidias.filter(
+        m => m.genero.toLowerCase() === generoAlvo.toLowerCase()
+    }
 }
