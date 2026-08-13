@@ -7,4 +7,11 @@ export default class Catalogo {
         this.#listaDeMidias.push(midia);
         this.renderizar();
     }
+    renderizar() {
+        const container = document.getElementById("containerCatalogo")
+        container.innerHTML = "";
+        this.#listaDeMidias.forEach(midia => {
+        container.innerHTML += midia.obterDadosHTML();
+        });
+    }
 }
