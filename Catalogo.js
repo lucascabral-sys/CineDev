@@ -14,4 +14,5 @@ export default class Catalogo {
         container.innerHTML += midia.obterDadosHTML();
         });
     }
+    xport default class Catalogo
 }
